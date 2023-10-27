@@ -64,20 +64,26 @@
           <h1 class="title is-1 publication-title">DEFT: Dexterous Fine-Tuning for Real-World Hand Policies</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Aditya Kannan*, Kenneth Shaw*
+              <a href = "https://adityak77.github.io/">Aditya Kannan*</a><sup></sup>&nbsp;&nbsp;
+              <a href = "https://kennyshaw.net/">Kenneth Shaw*</a><sup></sup>&nbsp;&nbsp;
+              <a href = "https://www.cs.cmu.edu/~sbahl2/">Shikhar Bahl</a><sup></sup>&nbsp;&nbsp;
+              <a href = "https://cmubig.github.io/team/pragna/">Pragna Mannam</a><sup></sup>&nbsp;&nbsp;
+              <a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>
+              
             </span>
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              In submission to CoRL 2023
+              Carnegie Mellon University
             </span>
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Paper ID 378
+              CoRL 2023
             </span>
+            <h6 style = "font-size:14px">*denotes equal contribution</h6>
           </div>
-
+          
           <!-- TODO: Add after public -->
           <!-- <div class="is-size-5 publication-authors">
           </div> -->
@@ -85,19 +91,19 @@
           <!-- <div class="is-size-5 publication-authors">
           </div> -->
 
-          <!-- <div class="column has-text-centered">
+          <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://openreview.net/pdf?id=wH23nZpVTF6"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>CoRL Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -106,34 +112,25 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a target="_blank" href="https://twitter.com/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-youtube"></i>
+                      <i class="fab fa-twitter"></i>
                   </span>
-                  <span>Video</span>
+                  <span>Summary</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/adityak77/deft-data"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
+                  <span>Grasp Data</span>
                   </a>
             </div>
 
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -153,11 +150,12 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">Method Video</h3>
         <tr>
           <td>
             <div class="row">
               <div class="col">
-                <video class="center" loop muted controls picture-in-picture src="./static/videos/main_tasks_website.mp4" width="100%"
+                <video class="center" loop muted controls picture-in-picture src="./static/videos/teaser_video.mp4" width="100%"
                          style="border-radius:10px; display: block;
                          margin-left: auto;
                          margin-right: auto;"></video>
@@ -169,6 +167,7 @@
     </div>
   </div>
 </section>
+
 
 
 <section class="section">
@@ -210,12 +209,33 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">CoRL Talk Video</h3>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col">
+                <video class="center" loop muted controls picture-in-picture src="./static/videos/CoRL_2023_Spotlight_Presentation.mp4" width="100%"
+                         style="border-radius:10px; display: block;
+                         margin-left: auto;
+                         margin-right: auto;"></video>
+              </div>
+            </div>                
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
-        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">Learning affordances from human videos</h3>
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">1) Learning affordances from human videos</h3>
         <tr>
           <td>
             <div class="row">
@@ -224,8 +244,8 @@
                 <br>
                 <div class="content has-text-justified">
                   <p style = "font-size: 20px; centered">
-                We learn a model for <i>where</i> and <i>how</i> to grasp objects from human videos. We use this model
-                to initialize a policy, which is then fine-tuned in the real world.
+                We learn a prior for <i>where</i> and <i>how</i> to grasp objects from human videos. This model
+                initializes the real-world policy.
                     </p>
                 </div>
               </div>
@@ -242,7 +262,7 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
-        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">Real-world affordance fine-tuning</h3>
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">2) Efficient Real-World Improvement</h3>
         <tr>
           <td>
             <div class="row">
@@ -254,9 +274,38 @@
                 <br> -->
                 <div class="content has-text-justified">
                   <p style = "font-size: 20px; centered">
-                We improve upon the affordances provided by the human priors by fine-tuning in the real world. With a soft
+                We improve upon the affordance by fine-tuning in the real world.  We sample from the affordance and fine-tune these grasps by learning a residual.  With a soft
                 robotic hand, we can perform many rollouts without damaging the hand or the environment. Across all tasks, we spend 
                 <b>100+ hours</b> collecting over <b>3000 rollouts</b> in the real world.
+                    </p>
+                </div>
+              </div>
+            </div>                
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">3) Safe Learning</h3>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col">
+                <!-- <video class="center" playsinline autoplay loop muted controls src="./static/videos/fine_tuning.mp4" width="100%"
+                         style="border-radius:10px; display: block;
+                         margin-left: auto;
+                         margin-right: auto;"></video>
+                <br> -->
+                <div class="content has-text-justified">
+                  <p style = "font-size: 20px; centered">
+                    To ensure safe learning, we use the DASH hand that we introduced in  <a href = "https://dash-through-interaction.github.io/">DASH:
+                      A Framework for Designing Anthropomorphic Soft Hands through Interaction.</a> This soft hand is very durable to bumps and does not damage the environment.
                     </p>
                 </div>
               </div>
@@ -272,7 +321,7 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-three-quarters">
-        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">Performance</h3>
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">Results</h3>
 
         <div class="container">
           <div class="content has-text-centered">
@@ -376,8 +425,7 @@
           <div class="content has-text-centered">
             <p style = "font-size: 20px; centered">
           One failure case is the hand does not curl enough to maintain a strong grasp of the object. While the hand has human-like form,
-          it does not have human-like strength. Another drawback is that the arm has restrictions on its strength because the arm is rigid; 
-          as a result, it has limits on the amount of force it can apply to the environment.
+          it does not have human-like strength. Another drawback is that the arm has restrictions on its strength because the arm uses inverse kinematics and does not have a force-based controller.
               </p>
           </div>
 
@@ -401,18 +449,42 @@
 </section>
 
 
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">Task Compilation</h3>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col">
+                <video class="center" loop muted controls picture-in-picture src="./static/videos/main_tasks_website.mp4" width="100%"
+                         style="border-radius:10px; display: block;
+                         margin-left: auto;
+                         margin-right: auto;"></video>
+              </div>
+            </div>                
+          </td>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+
 <!-- TODO: After arxiving -->
-<!-- <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{kannan2023deft,
+  author    = {Kannan, Aditya and Shaw, Kenneth and Bahl, Shikhar and Mannam, Pragna and Pathak, Deepak},
+  title     = {DEFT: Dexterous Fine-Tuning for Real-World Hand Policies},
+  journal   = {CoRL},
+  year      = {2023},
 }</code></pre>
   </div>
-</section> -->
+</section>
 
 
 <footer class="footer">
