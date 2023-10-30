@@ -240,11 +240,11 @@
           <td>
             <div class="row">
               <div class="col">
-                <img id="method" src="./static/images/prior.png" alt="Method Figure" width="100%">
+                <img id="method" src="./static/images/prior.png" alt="Method Figure" width="75%">
                 <br>
                 <div class="content has-text-justified">
                   <p style = "font-size: 20px; centered">
-                We learn a prior for <i>where</i> and <i>how</i> to grasp objects from human videos. This model
+                We learn a prior affordance model on <i>where</i> (xy rot) and <i>how</i> (MANO hand pose) to grasp objects from human videos. This model
                 initializes the real-world policy.
                     </p>
                 </div>
@@ -273,11 +273,10 @@
                          margin-right: auto;"></video>
                 <br> -->
                 <div class="content has-text-centered">
-                  <img id="method" src="./static/images/fine_tuning.png" alt="Method Figure" width="65%" >
+                  <img id="method" src="./static/images/fine_tuning_wide.png" alt="Method Figure" width="100%" >
                 <br>
                   <p style = "font-size: 20px; centered">
-                We improve upon the affordance by fine-tuning in the real world.  We sample from the affordance and fine-tune these grasps by learning a residual.  With a soft
-                robotic hand, we can perform many rollouts without damaging the hand or the environment. Across all tasks, we spend 
+                We improve upon the affordance by fine-tuning in the real world.  We sample from the affordance and fine-tune the policy by learning a residual policy on the trajectory and grasp parameters.  Across all tasks, we spend 
                 <b>100+ hours</b> collecting over <b>3000 rollouts</b> in the real world.
                     </p>
                 </div>
@@ -299,11 +298,9 @@
           <td>
             <div class="row">
               <div class="col">
-                <!-- <video class="center" playsinline autoplay loop muted controls src="./static/videos/fine_tuning.mp4" width="100%"
-                         style="border-radius:10px; display: block;
-                         margin-left: auto;
-                         margin-right: auto;"></video>
-                <br> -->
+                <div class="content has-text-centered">
+                  <img id="method" src="./static/images/dash_hand.png" alt="Method Figure" width="75%" >
+                <br>
                 <div class="content has-text-justified">
                   <p style = "font-size: 20px; centered">
                     To ensure safe learning, we use the DASH hand that we introduced in  <a href = "https://dash-through-interaction.github.io/">DASH:
