@@ -253,7 +253,7 @@
                 <br>
                 <div class="content has-text-justified">
                   <p style = "font-size: 20px; centered">
-                We learn a prior affordance model on <i>where</i> (xy rot) and <i>how</i> (MANO hand pose) to grasp objects from human videos. This model
+                We learn a prior affordance model on <i>where</i> (wrist location + rotation) and <i>how</i> (finger joint angles) to grasp objects from human videos. This model
                 initializes the real-world policy.
                     </p>
                 </div>
@@ -285,8 +285,8 @@
                   <img id="method" src="./static/images/fine_tuning_new.png" alt="Method Figure" width="100%" >
                 <br>
                   <p style = "font-size: 20px; centered">
-                We improve upon the affordance by fine-tuning in the real world.  We sample from the affordance and fine-tune the policy by learning a residual policy on the trajectory and grasp parameters.  Across all tasks, we spend 
-                <b>100+ hours</b> collecting over <b>3000 rollouts</b> in the real world.
+                We improve upon the affordance by fine-tuning in the real world.  We sample from the affordance and fine-tune the policy by learning a residual policy on the trajectory and grasp parameters.  
+                Across all tasks, experiments, and ablations, we spend <b>100+ hours</b> collecting over <b>3000 rollouts</b> in the real world.
                     </p>
                 </div>
               </div>
